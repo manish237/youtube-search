@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search YouTube</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Search YouTube</h1>
+
+    <form class="js-video-search-form" action="#">
+      <label for="search-string">Enter search string</label>
+      <input type="text" name="search-string" id="search-string" placeholder="e.g., hollywood">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="video-list">
+    </div>
+
+    <div class="video-nav">
+      <a href="#" class="video-nav-prev">Previous Page</a>
+      <a href="#" class="video-nav-next">Next Page</a>
+    </div>
+  </div>
+
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
