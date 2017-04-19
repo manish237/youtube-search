@@ -24,7 +24,7 @@ button:hover {
 }
 
 .video-list-item{
-  /*display: inline-block;*/
+  display: inline;
 }
 
 .video-img{
@@ -43,7 +43,6 @@ img{
   padding-left: 70px;
   padding-right: 10px;
   padding-bottom: 10px;
-  position: relative;
 }
 
 .video-nav{
@@ -53,4 +52,8 @@ img{
   padding-bottom:10px;
 
 }
-
+.channel-item{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
