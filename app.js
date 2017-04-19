@@ -18,18 +18,26 @@ function displayYTSearchData(data) {
     $('.video-list').empty();
 
     //console.log(data.prevPageToken)
+    console.log("prev token" + data.prevPageToken)
+    console.log("next token" + data.nextPageToken)
     if(typeof data.prevPageToken !==  'undefined' &&  data.prevPageToken.length!==0)
     {
+        console.log("inside prev")
         $('.video-nav-prev').show()
         $('.video-nav-prev').attr("href", data.prevPageToken)
         //console.log($('.video-nav-prev'))
     }
+    else
+        $('.video-nav-prev').hide()
     if(typeof data.nextPageToken !==  'undefined' &&  data.nextPageToken.length!==0)
     {
+        console.log("inside next")
         $('.video-nav-next').show()
         $('.video-nav-next').attr("href", data.nextPageToken)
-        console.log($('.video-nav-next'))
+        // console.log($('.video-nav-next'))
     }
+    else
+        $('.video-nav-next').hide()
 
     if (data.items) {
         data.items.forEach(function(item) {
